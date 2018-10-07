@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interactivity/custom.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -102,17 +103,13 @@ class _HomeState extends State<Home> {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
-                    RaisedButton(
-                      color: Colors.blue,
+                    CustomButton(
                       onPressed: () {
                         setState(() {
                           scoreB += 3;
                         });
                       },
-                      child: Text(
-                        'Tambah 3',
-                        style: TextStyle(color: Colors.white),
-                      ),
+                      label: 'Tambah 3',
                     )
                   ],
                 )
